@@ -18,6 +18,13 @@ function insert(value) {
         return;
     }
 
+    let parts = currentExpression.split(/[\+\-\*\/]/)
+    let lastNumber = parts[parts.length - 1]
+
+    if (value === '.' && lastNumber.includes('.')) {
+        return;
+    }
+
     currentExpression += value;
     lastCal.innerHTML = currentExpression;
 }
