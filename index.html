@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+<body>
+    <div id="app">
+        <div id="display">
+            <div id="last-calc"><span></span></div>
+                <div id="result">
+                    <img src="assets/equals.svg" alt="sinal de igual">
+                    <span></span>
+                </div>
+        </div>
+        <div id="keyboard">
+            <button class="secondary" onclick="clearAll()">CE</button>
+            <button onclick="insert('(')">(</button>
+            <button onclick="insert(')')">)</button>
+            <button class="tertiary" onclick="insert('/')">/</button>
+
+            <button onclick="insert('1')">1</button>
+            <button onclick="insert('2')">2</button>
+            <button onclick="insert('3')">3</button>
+            <button class="tertiary" onclick="insert('*')">x</button>
+
+            <button onclick="insert('4')">4</button>
+            <button onclick="insert('5')">5</button>
+            <button onclick="insert('6')">6</button>
+            <button class="tertiary" onclick="insert('-')">-</button>
+
+            <button onclick="insert('7')">7</button>
+            <button onclick="insert('8')">8</button>
+            <button onclick="insert('9')">9</button>
+            <button class="tertiary" onclick="insert('+')">+</button>
+
+            <button onclick="insert('0')">0</button>
+            <button onclick="insert('.')">,</button>
+            <button onclick="deleteLast()">C</button>
+            <button class="quaternary" onclick="calculate()">=</button>
+        </div>
+    </div>
+    <script src="assets/script.js"></script>
+</body>
+</html>
