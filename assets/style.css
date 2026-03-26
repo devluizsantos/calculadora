@@ -124,6 +124,10 @@ button:active {
     height: 60px;
 }
 
+button:focus {
+    outline: none;
+}
+
 .secondary {
     color: #975DFA;
 }
